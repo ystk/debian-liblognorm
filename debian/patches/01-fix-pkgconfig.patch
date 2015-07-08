@@ -1,0 +1,12 @@
+Index: liblognorm/lognorm.pc.in
+===================================================================
+--- liblognorm.orig/lognorm.pc.in
++++ liblognorm/lognorm.pc.in
+@@ -6,5 +6,6 @@ includedir=@includedir@
+ Name: lognorm
+ Description: fast samples-based log normalization library
+ Version: @VERSION@
+-Libs: -L${libdir} -llognorm -lestr
++Requires: libestr json-c
++Libs: -L${libdir} -llognorm
+ Cflags: -I${includedir}
